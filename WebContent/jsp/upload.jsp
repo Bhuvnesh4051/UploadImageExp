@@ -10,7 +10,7 @@
 <body>
     <center>
         <h1>File Upload to Database Demo</h1>
-        <form method="post" action="/uploadServlet" enctype="multipart/form-data">
+        <form method="post" action="<%=request.getContextPath() %>/uploadAndShow" enctype="multipart/form-data">
             <table border="0">
                 <tr>
                     <td>First Name: </td>
@@ -22,7 +22,7 @@
                 </tr>
                 <tr>
                     <td>Portrait Photo: </td>
-                    <td><input type="file" name="photo" size="50"/></td>
+                    <td><input type="file" name="photo" size="500"/></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -32,5 +32,6 @@
             </table>
         </form>
     </center>
+    
 </body>
 </html>
